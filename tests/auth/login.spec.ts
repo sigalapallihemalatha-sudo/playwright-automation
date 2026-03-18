@@ -1,7 +1,7 @@
 // login.spec.ts
 
 // Load .env only when running locally
-if (process.env.NODE_ENV !== "ci") {
+if (!process.env.CI) {  // CI is automatically true in GitHub Actions
   require('dotenv').config();
 }
 
