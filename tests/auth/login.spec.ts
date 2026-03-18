@@ -9,5 +9,5 @@ test('Login Test', async ({ page, loginPage }) => {
   // Use testData instead of hardcoding
   await loginPage.login(testData.username, testData.password);
 
-  await expect(page).toHaveURL(/inventor/);
+  await expect(page).toHaveURL(/inventory/);
 });
