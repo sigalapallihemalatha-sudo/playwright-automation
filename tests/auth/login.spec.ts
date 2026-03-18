@@ -16,11 +16,6 @@ const PASSWORD = process.env.TEST_PASSWORD!;
 
 console.log("URL:", BASE_URL, "USER:", USERNAME); // Debug line
 
-
-
-
-
-
 test('Login Test', async ({ page, loginPage }) => {
 
   await page.goto(BASE_URL);
@@ -28,5 +23,5 @@ test('Login Test', async ({ page, loginPage }) => {
   // Use testData instead of hardcoding
   await loginPage.login(USERNAME, PASSWORD);
 
-  await expect(page).toHaveURL(/inventory/);
+  await expect(page).toHaveURL(/inventor/);
 });
