@@ -27,6 +27,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # Intsall Playwright
+      - name: Install Playwright browsers
+        run: npx playwright install
+
       # Optional: check env variables
       - name: Print env variables (masked)
         run: |
