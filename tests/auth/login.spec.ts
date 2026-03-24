@@ -25,3 +25,5 @@ test('Login Test', async ({ page, loginPage }) => {
 
   await expect(page).toHaveURL(/inventor/);
 });
+
+
